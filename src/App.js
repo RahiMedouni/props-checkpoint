@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import ReactHeader from "./Profile/Components/ReactHeader";
+import ProfileComponents from "./Profile/ProfileComponents";
 
 function App() {
+  const handleClick = () => {
+    alert("RAHIM RG");
+  };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ProfileComponents
+        FullName="Rahim RG"
+        Bio="My bio as a web devoloper and experieces through the years..."
+        Profession="Web Devoloper"
+        children={<img src={"/imagevictor.jpg"} alt="inPublic" />}
+        handleName={<button onClick={handleClick}>Click me</button>}
+      />
+      <ReactHeader />
     </div>
   );
 }
