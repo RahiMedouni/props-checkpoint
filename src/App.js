@@ -3,12 +3,12 @@ import ProfileComponents from "./Profile/ProfileComponents";
 
 function App() {
   const handleClick = () => {
-    alert("RAHIM RG");
+    alert("RAHIM Mdn");
   };
   return (
     <div className="App">
       <ProfileComponents
-        FullName="Rahim RG"
+        FullName="Rahim Mdn"
         Bio="My bio as a web devoloper and experieces through the years..."
         Profession="Web Devoloper"
         children={<img src={"/imagevictor.jpg"} alt="inPublic" />}
