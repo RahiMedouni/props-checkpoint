@@ -14,7 +14,7 @@ const ProfileComponents = (props) => {
       </div>
       <div>
         <span>
-          <h3>Profession:</h3> {props.Profession}{" "}
+          <h3>Professions:</h3> {props.Profession}{" "}
         </span>
       </div>
       <div>
